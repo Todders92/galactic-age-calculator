@@ -15,4 +15,9 @@ export class Age {
     let mercAge = age * .24
     return mercAge
   }
+  venusAge(age) {
+    let venAge = age * .62
+    return venAge
+  }
+
 }

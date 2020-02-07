@@ -12,4 +12,9 @@ describe("Age", () => {
     expect(age.mercuryAge(42)).toEqual(10.08)
   });
 
+  test("this should calculate the users age in venus years", () => {
+    let age = new Age(42, 0, 0, 0, 0)
+    expect(age.venusAge(42)).toEqual(26.04)
+  });
+
 });
