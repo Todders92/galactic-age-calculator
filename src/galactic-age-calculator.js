@@ -9,6 +9,11 @@ export class Age {
   checkUserAge(age) {
     if (age === 1 || age <= 120)
     return age
-    // console.log(this.userAge)
   } 
+
+  mercuryAge(age) {
+    let mercAge = age*.24
+    console.log(mercAge);
+    // return mercAge
+  }
 }
