@@ -36,4 +36,4 @@ export class Age {
     let earthLife = 78 - age;
     return earthLife;
   }
-}
+};
