@@ -32,4 +32,8 @@ export class Age {
     let convertAge = parseFloat(jupiterAge.toFixed(2));
     return convertAge;
   }
+  earthLife(age) {
+    let earthLife = 78 - age;
+    return earthLife;
+  }
 }

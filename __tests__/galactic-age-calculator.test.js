@@ -26,5 +26,8 @@ describe("Age", () => {
     let age = new Age(42, 0, 0, 0, 0)
     expect(age.jupiterAge(42)).toEqual(3.54)
   });
-
+  test("this should calculate the users life expectancy on earth", () => {
+  let age = new Age(42, 0, 0, 0, 0)
+  expect(age.earthLife(42)).toEqual(36)
+  });
 });
