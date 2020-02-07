@@ -9,17 +9,22 @@ describe("Age", () => {
 
   test("this should calculate the users age in mercury years", () => {
     let age = new Age(42, 0, 0, 0, 0)
-    expect(age.mercuryAge(42)).toEqual(10.08)
+    expect(age.mercuryAge(42)).toEqual(175.00)
   });
 
   test("this should calculate the users age in venus years", () => {
     let age = new Age(42, 0, 0, 0, 0)
-    expect(age.venusAge(42)).toEqual(26.04)
+    expect(age.venusAge(42)).toEqual(67.74)
   });
 
   test("this should calculate the users age in mars years", () => {
     let age = new Age(42, 0, 0, 0, 0)
-    expect(age.marsAge(42)).toEqual(78.96)
+    expect(age.marsAge(42)).toEqual(22.34)
+  });
+
+  test("this should calculate the users age in jupiter years", () => {
+    let age = new Age(42, 0, 0, 0, 0)
+    expect(age.jupiterAge(42)).toEqual(3.54)
   });
 
 });

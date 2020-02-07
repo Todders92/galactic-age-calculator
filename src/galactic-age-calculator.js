@@ -12,16 +12,24 @@ export class Age {
   } 
 
   mercuryAge(age) {
-    let mercAge = age * .24
-    return mercAge
+    let mercuryAge = age / .24;
+    let convertAge = parseFloat(mercuryAge.toFixed(2));
+    return convertAge;
   }
   venusAge(age) {
-    let venAge = age * .62
-    return venAge
+    let venusAge = age / .62;
+    let convertAge = parseFloat(venusAge.toFixed(2));
+    return convertAge;
   }
-
   marsAge(age) {
-    let marsAge = age * 1.88
-    return marsAge
+    let marsAge = age / 1.88;
+    let convertAge = parseFloat(marsAge.toFixed(2));
+    return convertAge;
+  }
+ 
+  jupiterAge(age) {
+    let jupiterAge = age / 11.86;
+    let convertAge = parseFloat(jupiterAge.toFixed(2));
+    return convertAge;
   }
 }
