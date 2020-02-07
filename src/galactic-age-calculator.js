@@ -12,8 +12,7 @@ export class Age {
   } 
 
   mercuryAge(age) {
-    let mercAge = age*.24
-    console.log(mercAge);
-    // return mercAge
+    let mercAge = age * .24
+    return mercAge
   }
 }
