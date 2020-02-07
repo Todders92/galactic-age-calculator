@@ -6,5 +6,9 @@ export class Age {
   this.mars = mars
   this.jupiter = jupiter
   }
-  
+  checkUserAge(age) {
+    if (age === 1 || age <= 120)
+    return age
+    // console.log(this.userAge)
+  } 
 }
