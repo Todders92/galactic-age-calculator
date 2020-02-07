@@ -17,4 +17,9 @@ describe("Age", () => {
     expect(age.venusAge(42)).toEqual(26.04)
   });
 
+  test("this should calculate the users age in mars years", () => {
+    let age = new Age(42, 0, 0, 0, 0)
+    expect(age.marsAge(42)).toEqual(78.96)
+  });
+
 });

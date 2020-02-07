@@ -20,4 +20,8 @@ export class Age {
     return venAge
   }
 
+  marsAge(age) {
+    let marsAge = age * 1.88
+    return marsAge
+  }
 }
