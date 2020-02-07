@@ -33,7 +33,13 @@ export class Age {
     return convertAge;
   }
   earthLife(age) {
-    let earthLife = 78 - age;
-    return earthLife;
+    let lifeSpan = 78
+    let earthLife = lifeSpan - age;
+    if (lifeSpan >= age) {
+      return earthLife;
+    } else{
+      return age - lifeSpan;
+    }
+    
   }
 };
