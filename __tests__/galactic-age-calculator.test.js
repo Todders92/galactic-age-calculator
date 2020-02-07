@@ -30,8 +30,12 @@ describe("Age", () => {
   let age = new Age(42, 0, 0, 0, 0)
   expect(age.earthLife(42)).toEqual(36)
   });
-  test("this should determine if the user has outlived the average life expectancy", () => {
-    let age = new Age(42, 0, 0, 0, 0)
+  test("this should determine if the user has outlived the average life expectancy on earth", () => {
+    let age = new Age(86, 0, 0, 0, 0)
     expect(age.earthLife(86)).toEqual(8)
+    });
+  test("this should determine if the user has outlived the average life expectancy on Mercury", () => {
+    let age = new Age(86, 0, 0, 0, 0)
+    expect(age.mercuryLife(86)).toEqual(8)
     });
 });

@@ -40,6 +40,14 @@ export class Age {
     } else{
       return age - lifeSpan;
     }
-    
   }
+  // mercuryLife(age) {
+  //   let lifeSpan = 78
+  //   let earthLife = lifeSpan - age;
+  //   if (lifeSpan >= age) {
+  //     return earthLife;
+  //   } else{
+  //     return age - lifeSpan;
+  //   }
+  // }
 };
