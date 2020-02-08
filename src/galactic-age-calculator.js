@@ -1,37 +1,17 @@
 export class Age {
-  constructor(userAge, mercury, venus, mars, jupiter) {
+  constructor(userAge) {
   this.userAge = userAge,
   this.mercury = Math.round(userAge / .24), 
-  this.venus = venus, 
-  this.mars = mars
-  this.jupiter = jupiter
+  this.venus = Math.round(userAge / .62), 
+  this.mars = Math.round(userAge / 1.88),
+  this.jupiter = Math.round(userAge / 11.86)
   }
   checkUserAge(age) {
     if (age === 1 || age <= 120)
     return age
   } 
 
-  mercuryAge(age) {
-    let mercuryAge = age / .24;
-    let convertAge = parseFloat(mercuryAge.toFixed(2));
-    return convertAge;
-  }
-  venusAge(age) {
-    let venusAge = age / .62;
-    let convertAge = parseFloat(venusAge.toFixed(2));
-    return convertAge;
-  }
-  marsAge(age) {
-    let marsAge = age / 1.88;
-    let convertAge = parseFloat(marsAge.toFixed(2));
-    return convertAge;
-  }
- 
-  jupiterAge(age) {
-    let jupiterAge = age / 11.86;
-    let convertAge = parseFloat(jupiterAge.toFixed(2));
-    return convertAge;
-  }
+  
   earthLife(age) {
     let lifeSpan = 78;
     let earthExceed = lifeSpan - age;
