@@ -27,8 +27,8 @@ describe("Age", () => {
     expect(age.jupiter).toEqual(4)
   });
   test("this should calculate the users life expectancy on earth", () => {
-  let age = new Age(42)
-  expect(age.earthLife(42)).toEqual(36)
+    let age = new Age(42)
+    expect(age.earthLife(42)).toEqual(36)
   });
   test("this should determine if the user has outlived the average life expectancy on earth", () => {
     let age = new Age(86)
@@ -36,6 +36,11 @@ describe("Age", () => {
   });
   test("this should determine if the user has outlived the average life expectancy on Mercury", () => {
     let age = new Age(86)
-    expect(age.venusLife(86)).toEqual(33.33)
+    expect(age.mercuryLife(86)).toEqual(33.33)
   });
+  test("this should determine if the user has outlived the average life expectancy on Venus", () => {
+    let age = new Age(86)
+    expect(age.marsLife(86)).toEqual(12.91)
+  });
+
 });
