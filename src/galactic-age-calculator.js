@@ -45,9 +45,19 @@ export class Age {
   venusLife(age) {
     const venusAge = parseFloat((age /.62).toFixed(2));
     const lifeSpan = 125.8;
-    const mercuryExceed =  venusAge - lifeSpan;
+    const venusExceed =  venusAge - lifeSpan;
     if (lifeSpan >= venusAge) {
-      return mercuryExceed.toFixed(2);
+      return venusExceed.toFixed(2);
+    } else{
+      return parseFloat((venusAge - lifeSpan).toFixed(2));
+    }
+  }
+  marsLife(age) {
+    const venusAge = parseFloat((age /1.88).toFixed(2));
+    const lifeSpan = 41.49;
+    const marsExceed =  venusAge - lifeSpan;
+    if (lifeSpan >= venusAge) {
+      return marsExceed.toFixed(2);
     } else{
       return parseFloat((venusAge - lifeSpan).toFixed(2));
     }

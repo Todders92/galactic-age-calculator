@@ -40,7 +40,10 @@ describe("Age", () => {
   });
   test("this should determine if the user has outlived the average life expectancy on Venus", () => {
     let age = new Age(86)
-    expect(age.marsLife(86)).toEqual(12.91)
+    expect(age.venusLife(86)).toEqual(12.91)
   });
-
+  test("this should determine if the user has outlived the average life expectancy on Mars", () => {
+    let age = new Age(86)
+    expect(age.marsLife(86)).toEqual(4.25)
+  });
 });
