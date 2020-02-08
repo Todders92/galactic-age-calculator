@@ -7,10 +7,9 @@ export class Age {
   this.jupiter = Math.round(userAge / 11.86)
   }
   checkUserAge(age) {
-    if (age === 1 || age <= 120)
+    if (age >=1 && age < 131)
     return age
   } 
-
   
   earthLife(age) {
     let lifeSpan = 78;
@@ -21,6 +20,7 @@ export class Age {
       return age - lifeSpan;
     }
   }
+
   mercuryLife(age) {
     let mercAge = parseFloat((age /.24).toFixed(2));
     console.log(mercAge);
