@@ -26,9 +26,20 @@ _This project contains a back end logic for determining a users age on planets i
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
+## Specs
+Behaviour | Input | Output
+---|---|---
+User inputs age and program returns inputted age | 42 | 42
+user inputs age and the prgram creates a class that holds all the person's planetary ages|  42 | Age on Earth: 42, Age on Mercury: 175, Age on Mars: 22.34, etc.
+App determines life expectancy on each planet using same multipliers for calculating planetary ages | life expectancy in Earth years: 78| Mercury: 325, Venus: 125.80 Mars: 41.48, etc.
+App compares inputted age to life expectancy age and determines how many years the person has left to live| 51 | You have 27 more earth years of life left on earth!
+App can determine how many years the person has left on any planet based on the planets year length |51| You are 212.5 years old on venus. You have 112.5 venus years of life left on venus!
+If the user's age is higher than the life expectancy, the app determines how many years of death the user has cheated|90| You have cheated death for 12 years
+The App calculates how many years worth of death the user has cheated on other planets|90| You are 375 years old in Venus years! You have cheated 50 Venus years worth of death!
+
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+__
 
 ## Support and contact details
 
