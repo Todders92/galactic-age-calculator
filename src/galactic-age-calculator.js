@@ -53,13 +53,23 @@ export class Age {
     }
   }
   marsLife(age) {
-    const venusAge = parseFloat((age /1.88).toFixed(2));
+    const MarsAge = parseFloat((age /1.88).toFixed(2));
     const lifeSpan = 41.49;
-    const marsExceed =  venusAge - lifeSpan;
-    if (lifeSpan >= venusAge) {
+    const marsExceed =  MarsAge - lifeSpan;
+    if (lifeSpan >= MarsAge) {
       return marsExceed.toFixed(2);
     } else{
-      return parseFloat((venusAge - lifeSpan).toFixed(2));
+      return parseFloat((MarsAge - lifeSpan).toFixed(2));
+    }
+  }
+  jupiterLife(age) {
+    const jupiterAge = parseFloat((age /11.68).toFixed(2));
+    const lifeSpan = 7.25;
+    const marsExceed =  jupiterAge - lifeSpan;
+    if (lifeSpan >= jupiterAge) {
+      return marsExceed.toFixed(2);
+    } else{
+      return parseFloat((jupiterAge - lifeSpan).toFixed(2));
     }
   }
 };

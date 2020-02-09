@@ -46,4 +46,8 @@ describe("Age", () => {
     let age = new Age(86)
     expect(age.marsLife(86)).toEqual(4.25)
   });
+  test("this should determine if the user has outlived the average life expectancy on Jupiter", () => {
+    let age = new Age(86)
+    expect(age.jupiterLife(86)).toEqual(4.25)
+  });
 });
